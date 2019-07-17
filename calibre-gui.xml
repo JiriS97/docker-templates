@@ -9,6 +9,7 @@
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where Calibre will store it's configuration.[br]
     [b]/storage[/b] This is where Calibre will store it's e-book library.
+    [b]/import[/b] This location is for importing e-book into the library.[br]
   </Description>
   <Overview>
     Calibre is a powerful and easy to use e-book manager. The GUI of the application is accessed through a modern web browser.
@@ -51,6 +52,11 @@
       <HostDir>/mnt/user</HostDir>
       <ContainerDir>/storage</ContainerDir>
       <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/import</ContainerDir>
+      <Mode>r</Mode>
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
